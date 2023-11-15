@@ -32,14 +32,14 @@ int main(int agrc, char **agrv, char *env[])
 
 		if (line[linesize - 1] == '\n')
 			line[linesize - 1] = '\0';
-		cmd = tokenize(line);
+		cmd = tokenizer(line);
 
 		if (cmd == NULL || *cmd == NULL || **cmd == '\0')
 			continue;
 		if (checks(cmd, line))
 			continue;
 		path = find_path();
-		paths = tokenize(path);
+		paths = tokenizer(path);
 		pathcmd = path_test(paths, cmd[0]);
 
 		if (!pathcmd)

@@ -24,4 +24,4 @@ char *find_path(void)
 		env++;
 	}
 	return (NULL);
-
+}

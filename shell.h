@@ -29,7 +29,7 @@ void exit_cmd(char **cmd, char *inp);
 void print_env(void);
 
 /* string handlers */
-int _strcheck(char *st1, char *st2);
+int _stcheck(char *st1, char *st2);
 int _strlen(char *s);
 int _compstr(char *st1, char *st2, int n);
 char *_strdup(char *st);

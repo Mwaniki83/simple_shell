@@ -1,13 +1,13 @@
 #include "shell.h"
 
 /**
-* append_pth - adds path to a specific command
+* append_path - adds path to a specific command
 * @pth: path of command
 * @cmd: the command entered by user
 *
 * Return: the buffer containing command with path, NULL if it fails
 */
-char *append_pth(char *pth, char *cmd)
+char *append_path(char *pth, char *cmd)
 {
 	char *buff;
 	size_t a = 0, b = 0;
@@ -23,9 +23,9 @@ char *append_pth(char *pth, char *cmd)
 	if (!buff)
 		return (NULL);
 
-	while (pth[x])
+	while (pth[a])
 	{
-		buff[x] = pth[a];
+		buff[a] = pth[a];
 		a++;
 	}
 
