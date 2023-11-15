@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
-* _strcheck - compares two strings
+* _stcheck - compares two strings
 * @st1: first string to compare
 * @st2: second string to compare
 *
@@ -88,7 +88,8 @@ char *_strdup(char *st)
 * @s: string to be checked
 * @c: character to be found
 *
-* Return: returns pointer to first location of character | NULL if character not found
+* Return: pointer to first location of character
+* NULL if character not found
 */
 char *_strnch(char *s, char c)
 {

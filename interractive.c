@@ -2,7 +2,7 @@
 
 /**
  *chk_interract- checks whether shell is in interactive mode or not
- *@h: signal number to show activity
+ *@p: signal number to show activity
  *Return: nothing
  */
 

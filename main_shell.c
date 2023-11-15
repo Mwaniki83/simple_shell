@@ -15,13 +15,13 @@ int main(int agrc, char **agrv, char *env[])
 	ssize_t linesize = 0;
 	char **cmd = NULL, **paths = NULL;
 	(void)env, (void)agrv;
+
 	if (agrc < 1)
 		return (-1);
 	signal(SIGINT, chk_interract);
 	while (1)
 	{
-		free_buff(cmd);
-		free_buff(paths);
+		free_buff(cmd), free_buff(paths);
 		free(pathcmd);
 		user_prompt();
 		linesize = getline(&line, &buffsize, stdin);
